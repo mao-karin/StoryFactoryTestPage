@@ -1,0 +1,45 @@
+
+
+<html>
+<style>
+
+    p {
+        color: orange;
+    }
+
+</style>
+<script src="https://storyfactory--flowout.sandbox.my.site.com/forms/lightning/lightning.out.js"></script>
+
+<div data-lightning-out="true"></div>
+
+<script>
+
+    const appName = 'c:Workshop_Booking_Screen_Flow';
+    const componentName = 'c:Workshop_Booking_Screen_Flow';
+    const lightningEndpoint = 'https://storyfactory--flowout.sandbox.my.site.com/forms';
+    const targetElement = document.querySelector("[data-lightning-out]");
+    const componentAttributes = {
+
+    };
+
+    $Lightning.use(
+        appName,
+        function (){
+            $Lightning.createComponent(
+                componentName,
+                componentAttributes,
+                targetElement,
+                function (cmp){
+                    console.log('lightning component created');
+                }
+            );
+        },
+        lightningEndpoint
+    );
+
+
+</script>
+
+
+
+</html>
